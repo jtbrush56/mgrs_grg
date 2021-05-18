@@ -1,0 +1,189 @@
+body{
+	margin: 0px;
+}
+
+#map_container{
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+#controls_container{
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+div.top_controls{
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+#title_text{
+	/*float: right;*/
+	transform: rotate(-90deg);
+	transform-origin: right bottom 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.bldgNumLabelDiv{
+	background: transparent;
+	border: none;
+	box-shadow: none;
+	margin: 0;
+	padding: 0;
+	/*position: relative;*/
+}
+.bldgNumLabelP{
+	position: absolute;
+	background: none;
+	border: none;
+	box-shadow: none;
+	padding: 0;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+		/*
+	margin-right: -50%;
+*/ 
+    
+}
+div.control_box{
+	margin: 0px;
+	border: 2px solid black;
+	/*width: 90%;*/
+	vertical-align: middle;
+}
+
+.mission_map_controls {
+	display: inline-block;
+	border: 1px solid black;
+	padding: 4px;
+}
+
+#mission_display{
+	border-style: solid;
+	margin: 0px;
+    /*opacity: 0.1;
+    filter: Alpha(opacity=10); /* IE8 and earlier */
+}
+
+.switch_outer_box{
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+ /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  /*top: 4px;*/
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  margin: 0px;
+  padding; 0px;
+  }
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slidersw {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slidersw:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slidersw {
+  background-color: #2196F3;
+}
+
+input:focus + .slidersw {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slidersw:before {
+  -webkit-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  transform: translateX(30px);
+}
+
+/* Rounded sliders */
+.slidersw.round {
+  border-radius: 20px;
+}
+
+.slidersw.round:before {
+  border-radius: 50%;
+} 
+
+/* Slide bars follow */
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+	display: block;
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+	display: inline;
+    appearance: none;
+    width: 70%; /* Full-width */
+    height: 20px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider_bar handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 20px; /* Set a specific slider_bar handle width */
+    height: 20px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 20px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
